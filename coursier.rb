@@ -14,8 +14,10 @@ class Coursier < Formula
 
   def install
     bin.install 'coursier'
-    
-    zsh_completion.install "scripts/_coursier"
+
+    FileUtils.mkdir_p "completions/zsh"
+    system "bash", "-c", "bash ./coursier --completions zsh > completions/zsh/_coursier"
+    zsh_completion.install "completions/zsh/_coursier"
   end
 
   test do
