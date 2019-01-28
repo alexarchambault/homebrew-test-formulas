@@ -7,7 +7,7 @@ class Coursier < Formula
   homepage "https://get-coursier.io"
   version "1.1.0-M10"
   url "https://github.com/coursier/coursier/releases/download/v1.1.0-M10/coursier"
-  sha256 "2fff1bbad7135812c0e3e68f3c5ba842fbdcd9ce"
+  sha256 "c303952387f3c9117ca7c5a5042c1f491784a8d7d83f7a7f93f36e56dd9dcbce"
   bottle :unneeded
 
   depends_on :java => "1.8+"
