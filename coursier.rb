@@ -14,7 +14,7 @@ class Coursier < Formula
 
   def install
     FileUtils.mkdir_p "completions/zsh"
-    system "bash", "-c", "bash ./coursier --completions zsh > completions/zsh/_coursier"
+    system "bash", "-c", "echo '#compdef coursier' > completions/zsh/_coursier"
     zsh_completion.install "completions/zsh/_coursier"
 
     bin.install 'coursier'
